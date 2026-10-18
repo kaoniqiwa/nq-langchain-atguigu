@@ -6,8 +6,6 @@ from pydantic import SecretStr
 
 from utils import save_response
 
-
-# 读取 .env 文件并写入 os.environ
 # override=True：.env 里的值覆盖已存在的同名环境变量（默认不覆盖）
 load_dotenv(override=True)
 

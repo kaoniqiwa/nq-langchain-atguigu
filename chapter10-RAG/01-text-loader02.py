@@ -6,7 +6,7 @@
 # 01-text-loader04.py 用手写的 Loader 绕开编码探测（它只认显式传入的 encoding）
 from pathlib import Path
 from rich import reconfigure, print as rprint
-# chardet 不在 requirements.txt / requirements_full.txt 里，能 import 是因为它是
+# chardet 不在 requirements.txt / 111.txt 里，能 import 是因为它是
 # langchain-community 的传递依赖。这里既然直接用了它，就该把它显式写进 requirements，
 # 否则换个环境就是 ModuleNotFoundError
 import chardet
