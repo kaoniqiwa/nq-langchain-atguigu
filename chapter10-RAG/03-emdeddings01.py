@@ -21,6 +21,7 @@ if not API_KEY:
     raise ValueError("请设置 OPENROUTER_API_KEY 环境变量")
 if not MODEL:
     raise ValueError("请设置 OPENROUTER_EMBEDDING_MODEL 环境变量")
+
 try:
     with OpenRouter(api_key=API_KEY) as open_router:
         res: CreateEmbeddingsResponseBody | str = open_router.embeddings.generate(
